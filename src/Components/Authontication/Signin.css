@@ -1,0 +1,61 @@
+.signin__left {
+  height: 99.75vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: left;
+  align-items: start !important;
+}
+.signin__left > h1 {
+  color: #060606;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-family: Playfair Display, serif;
+}
+
+.signin__right {
+  background-color: #0c2d48;
+  height: 99.75vh;
+  position: relative;
+}
+
+.signin__right > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.signin__right > div {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0c2d48;
+  opacity: 0.6;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+.signin__right > div > h1 {
+  align-self: start;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.signin__right > div > blockquote {
+  padding: 1rem;
+  text-align: start;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+.signin__right > div > blockquote > footer {
+  float: right;
+  margin: 1rem 0.5rem;
+}

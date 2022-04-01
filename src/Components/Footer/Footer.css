@@ -1,0 +1,40 @@
+.footer {
+  background-color: #99badd;
+
+  align-items: center;
+  height: 5rem;
+}
+
+.Footer__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer__items > p {
+  color: rgb(34, 34, 34);
+  margin-top: 2rem;
+}
+.Footer__items>p:hover{
+    color: rgb(10, 10, 10);
+
+}
+.Footer__items > .footer__items__right {
+
+  flex: 0.6;
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__icons {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: rgb(22, 22, 58);
+  opacity: 0.8;
+  transition: all 0.3s linear;
+}
+.footer__icons:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+}

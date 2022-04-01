@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "./App.css";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalDataLayer } from "./Styles/Globalstyles";
+import ProtectedComponents from "./PreotectedComponents";
+import Signin from "./Components/Authontication/Signin";
+import MainAppBody from "./Components/MainApp/MainAppBody";
+import SignUP from "./Components/Authontication/SignUp";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalDataLayer />
+      <Router basename="/">
+        <Routes>
+          <Route path="/" element={<ProtectedComponents />} />
+
+          <Route path="/Sign-in" element={<Signin />} />
+          <Route path="/Sign-in/Sign-Up" element={<SignUP />} />
+
+          <Route path="/Do-me" element={<MainAppBody />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

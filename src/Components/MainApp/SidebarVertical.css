@@ -1,0 +1,86 @@
+.sidebar__vertical {
+  flex: 0.2;
+  background: rgb(30, 31, 32);
+
+  height: calc(100vh - 52px);
+  overflow: hidden;
+
+  overflow-y: scroll;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.sidebar__vertical > div {
+  width: 90%;
+
+  height: 2rem;
+  background: #36453f;
+  margin-top: 1rem;
+  display: flex;
+}
+.sidebar__vertical > div:hover {
+  background: #36413c;
+}
+.sidebar__vertical > div > .addTags {
+  color: grey;
+  margin-left: 1rem;
+  float: left;
+  font-size: 25px;
+}
+.sidebar__vertical > div > .addTags:hover {
+  color: white;
+}
+.sidebar__vertical > h1 {
+  font-family: Playfair Display, serif;
+
+  margin-left: 2rem;
+}
+.sidebar__vertical > input {
+  width: 90%;
+  padding: 0.4rem 0px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+}
+.sidebar__vertical > Button {
+  align-self: end !important;
+  margin-right: 0.67rem;
+  margin-top: 0.3rem;
+}
+
+.sidebar__vertical > ul {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  align-items: start !important;
+}
+
+.sidebar__vertical > ul > li {
+  align-self: start !important;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.2rem auto;
+  width: 100%;
+  display: flex;
+  border-radius: 0.3rem;
+}
+.sidebar__vertical > ul > li:hover {
+  background-color: rgb(39, 39, 39);
+}
+.div {
+  width: 20px;
+  margin-right: 0.8rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkred;
+  height: 20px;
+  background: pink;
+}
